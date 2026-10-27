@@ -10,9 +10,11 @@ Static site: open `index.html` or host the folder as-is (GitHub Pages, Netlify, 
 ## Folder structure
 - `index.html` — the whole website (styles and scripts are inside it)
 - `media/img/` — photos (WebP), `media/vid/` — videos (MP4)
+- `giftbox/` — the temporary birthday intro (28 October)
 - `og-image.jpg` — preview image shown when the link is shared
 
 ## Removing the birthday gift box (after 28 October)
-In `index.html`, delete everything from `<!-- GIFTBOX START` to `<!-- GIFTBOX END -->` near the top. The gift box's styles and script are inside that block.
+1. Delete the `giftbox/` folder.
+2. In `index.html`, delete the block between `<!-- GIFTBOX START` and `<!-- GIFTBOX END -->` (5 lines near the top).
 
 Fonts load from Google Fonts; everything else is local.
